@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="formPage1" class="form-page" action="lab2.php" method="GET">
+        <form id="formPage1" class="form-page" action="lab2.php" method="post">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" >
             <br>
@@ -19,7 +19,7 @@
             <textarea  style =" overflow-y: scroll;"  id="address" name="address" rows="4" required></textarea>
             <br>
             <label for="country">Country:</label>
-            <select id="country"  >
+            <select name="country"  >
                 <option name="country" value="">-- Select Country --</option>
                 <option name="country" value="usa">USA</option>
                 <option name="country" value="uk">UK</option>
@@ -59,7 +59,7 @@
 </namespace>
             
             <input type="submit" value="Submit">
-    
+       </form>
     </div>
 </body>
 </html>
